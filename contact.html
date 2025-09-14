@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page</title>
+  <title>Contact - TestBootstrap</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/theme.css">
 </head>
@@ -19,7 +19,7 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -28,13 +28,14 @@
       </div>
     </div>
   </nav>
+
   <!-- Hero -->
-  <section class="py-5 bg-dark text-light hero hero-custom-bg">
+  <section class="py-5 bg-dark text-light hero-custom-bg">
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h1 class="display-3 fw-bold mb-3">Build Something Great</h1>
-          <p class="lead mb-4">Clean, responsive starter powered by local Bootstrap assets.</p>
+          <h1 class="display-3 fw-bold mb-3">Contact</h1>
+          <p class="lead mb-4">Tell us about your project and goals</p>
           <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
             <a href="services.html" class="btn btn-primary btn-lg px-4">Get Started</a>
             <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Work with us</a>
@@ -44,64 +45,34 @@
     </div>
   </section>
 
-  <!-- Sections -->
-  <section id="sections" class="py-5">
+  <!-- Contact Form -->
+  <main class="section-pad">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-3">
-        <!-- About -->
-        <div class="col mb-4">
-          <div class="card h-100 shadow-sm position-relative">
-            <div class="card-body text-center">
-              <div class="mb-3 text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16" role="img" aria-label="About icon">
-                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM4.5 6a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V9H5a.5.5 0 0 1 0-1h1.5V6.5H5a.5.5 0 0 1-.5-.5zM8 4.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-              </div>
-              <h5 class="card-title">About</h5>
-              <p class="card-text">A modern, minimal starting point to showcase your product or idea.</p>
-              <a href="about.html" class="btn btn-outline-primary btn-sm mt-2">Learn more</a>
-              <a href="about.html" class="stretched-link" aria-label="Go to About"></a>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Services -->
-        <div class="col mb-4">
-          <div class="card h-100 shadow-sm position-relative">
-            <div class="card-body text-center">
-              <div class="mb-3 text-success">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16" role="img" aria-label="Services icon">
-                  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h11A1.5 1.5 0 0 1 15 3.5v9A1.5 1.5 0 0 1 13.5 14h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V7h12V3.5a.5.5 0 0 0-.5-.5h-11zM14 8H2v4.5a.5.5 0 0 0 .5.5H8v-3h6V8z"/>
-                </svg>
-              </div>
-              <h5 class="card-title">Services</h5>
-              <p class="card-text">Flexible components and utilities to build fast and ship faster.</p>
-              <a href="services.html" class="btn btn-outline-primary btn-sm mt-2">View services</a>
-              <a href="services.html" class="stretched-link" aria-label="Go to Services"></a>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">Please provide a valid email.</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Pricing -->
-        <div class="col mb-4">
-          <div class="card h-100 shadow-sm position-relative">
-            <div class="card-body text-center">
-              <div class="mb-3 text-warning">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16" role="img" aria-label="Pricing icon">
-                  <path d="M3 1a1 1 0 0 0-1 1v2h1.5A1.5 1.5 0 0 1 5 5.5v5A1.5 1.5 0 0 1 3.5 12H2v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V1H3zm9 12H5.5A2.5 2.5 0 0 0 8 10.5v-5A2.5 2.5 0 0 0 5.5 3H3V2h10v11z"/>
-                </svg>
-              </div>
-              <h5 class="card-title">Pricing</h5>
-              <p class="card-text">Simple tiers that scale with you, no surprises.</p>
-              <a href="pricing.html" class="btn btn-outline-primary btn-sm mt-2">See pricing</a>
-              <a href="pricing.html" class="stretched-link" aria-label="Go to Pricing"></a>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+              <div class="invalid-feedback">Please include a short message.</div>
             </div>
-          </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-  
+  </main>
+  <hr class="divider">
 
   <!-- Global CTA -->
   <section class="py-5 bg-light">
@@ -171,6 +142,23 @@
   </footer>
 
   <script src="js/bootstrap.bundle.js"></script>
+  <script>
+    // Bootstrap example for client-side validation
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
 </body>
 
 </html>
+

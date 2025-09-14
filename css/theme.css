@@ -1,0 +1,57 @@
+.hero-custom-bg {
+  background: radial-gradient(1000px 400px at 10% 10%, rgba(13,110,253,.35), transparent),
+              radial-gradient(800px 300px at 90% 30%, rgba(255,193,7,.25), transparent),
+              linear-gradient(180deg, #0b1320 0%, #0f172a 100%);
+}
+
+/* Card hover effect */
+.card {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+/* Simple horizontal timeline */
+.timeline { position: relative; }
+.timeline-steps { position: relative; display: flex; justify-content: space-between; gap: 1rem; padding-top: .5rem; }
+.timeline-steps::before { content: ""; position: absolute; left: 0; right: 0; top: 20px; height: 2px; background: rgba(0,0,0,.1); }
+.timeline-step { text-align: center; position: relative; z-index: 1; }
+.timeline-step .circle { width: 40px; height: 40px; border-radius: 50%; background: var(--bs-primary); color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto .5rem; font-weight: 600; }
+
+/* Design tokens */
+:root {
+  --brand-primary: #0d6efd;
+  --brand-dark: #0f172a;
+}
+
+/* Utilities */
+.section-pad { padding-top: 4rem; padding-bottom: 4rem; }
+.card-soft { border-radius: 1rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05); }
+
+/* Docs layout */
+.docs-sidebar { position: sticky; top: 1rem; }
+.docs-search { position: sticky; top: 0; z-index: 2; background: #fff; padding-top: .5rem; padding-bottom: .5rem; }
+.docs-list .list-group-item { cursor: pointer; }
+.docs-list .list-group-item:hover { background: rgba(13,110,253,.06); }
+.docs-article pre { background: #0f172a; color: #e2e8f0; padding: 1rem; border-radius: .5rem; overflow: auto; }
+.docs-article code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+/* Consistent block spacing for hero sections */
+.hero { padding-top: 4rem; padding-bottom: 4rem; }
+.hero .container { padding-top: 0; padding-bottom: 0; }
+
+/* Divider utility for breathable separation */
+.divider { height: 1px; background: rgba(0,0,0,.08); border: 0; margin: 3rem 0; }
+
+/* Natural spacing between consecutive sections (no <hr>) */
+section + section { margin-top: 3rem; }
+@media (min-width: 768px) {
+  section + section { margin-top: 4rem; }
+}
+
+/* Footer link styles */
+.site-footer a { text-decoration: none; }
+.site-footer a.text-light:hover { color: #adb5bd !important; }

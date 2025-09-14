@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docs - TestBootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TestBootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-5 bg-dark text-light hero-custom-bg">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-3 fw-bold mb-3">Documentation</h1>
+          <p class="lead mb-4">Search articles, examples, and tips</p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+            <a href="services.html" class="btn btn-primary btn-lg px-4">Get Started</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Work with us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Docs Layout -->
+  <main class="section-pad">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar -->
+        <aside class="col-12 col-md-4 col-lg-3">
+          <div class="docs-sidebar">
+            <div class="docs-search mb-2">
+              <input id="search" type="search" class="form-control" placeholder="Search docs..." aria-label="Search" />
+            </div>
+            <div class="list-group docs-list" id="list" role="tablist" aria-label="Articles list">
+              <!-- Items injected -->
+            </div>
+            <div id="noResults" class="text-muted small mt-2" style="display:none;">No results</div>
+          </div>
+        </aside>
+        <!-- Article -->
+        <section class="col-12 col-md-8 col-lg-9">
+          <article id="content" class="docs-article">
+            <!-- Content injected -->
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+  <hr class="divider">
+
+  <!-- Global CTA -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="h3 fw-semibold mb-3">Ready to start working together?</h2>
+      <p class="lead mb-4">Let's scope your project and build something great.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+        <a class="btn btn-primary btn-lg" href="services.html">View Services</a>
+        <a class="btn btn-outline-secondary btn-lg" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer bg-dark text-light">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-12 col-lg-3">
+          <h5 class="mb-2">TestBootstrap</h5>
+          <p class="text-secondary mb-0">Built with Bootstrap and local assets</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="text-light" href="about.html">About</a></li>
+            <li class="mb-2"><a class="text-light" href="services.html">Services</a></li>
+            <li class="mb-2"><a class="text-light" href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a class="text-light" href="docs.html">Docs</a></li>
+            <li class="mb-2"><a class="text-light" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Guides</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Getting started</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Starter template</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Components</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Layout</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Projects</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Bootstrap 5</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Example repo</a></li>
+            <li class="mb-2"><a class="text-light" href="#">GitHub</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Open Source</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Community</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Discussions</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Sponsors</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Blog</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-top">
+      <div class="container py-5">
+        <div class="small text-center text-secondary">© 2025 TestBootstrap. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script>
+    // Load Fuse locally first, then fallback to CDN if unavailable
+    function loadScript(src) {
+      return new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = src; s.async = true; s.onload = resolve; s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    }
+
+    function debounce(fn, wait) {
+      let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
+    }
+
+    const state = { docs: [], fuse: null, filtered: [], current: null };
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+    }
+
+    function renderMarkdown(md) {
+      // Basic Markdown: code fences, headings, paragraphs, inline code
+      let html = md.trim();
+      // Fenced code blocks ```
+      html = html.replace(/```([\s\S]*?)```/g, (m, code) => `<pre><code>${escapeHtml(code.trim())}</code></pre>`);
+      // Headings ## and ###
+      html = html.replace(/^###\s+(.*)$/gm, '<h3>$1</h3>');
+      html = html.replace(/^##\s+(.*)$/gm, '<h2>$1</h2>');
+      // Inline code
+      html = html.replace(/`([^`]+)`/g, (m, code) => `<code>${escapeHtml(code)}</code>`);
+      // Paragraphs: split on double newlines not already wrapped
+      html = html.replace(/^(?!<h\d|<pre|<ul|<ol|<p)(.+)$/gm, '<p>$1</p>');
+      return html;
+    }
+
+    function renderList(items) {
+      const list = document.getElementById('list');
+      const noRes = document.getElementById('noResults');
+      list.innerHTML = '';
+      if (!items.length) { noRes.style.display = ''; return; }
+      noRes.style.display = 'none';
+      for (const d of items) {
+        const a = document.createElement('a');
+        a.className = 'list-group-item list-group-item-action';
+        a.href = `#${d.slug}`;
+        a.innerHTML = `<div class="d-flex w-100 justify-content-between"><h6 class="mb-1">${escapeHtml(d.title)}</h6><span class="badge bg-secondary">${escapeHtml(d.category)}</span></div><p class="mb-1 small text-muted">${escapeHtml(d.summary)}</p>`;
+        a.addEventListener('click', (e) => { e.preventDefault(); selectDoc(d.slug); });
+        list.appendChild(a);
+      }
+    }
+
+    function renderDoc(doc) {
+      const el = document.getElementById('content');
+      const tags = doc.tags.map(t => `<span class="badge bg-light text-dark me-1">${escapeHtml(t)}</span>`).join('');
+      el.innerHTML = `
+        <div class="d-flex align-items-center mb-2">
+          <h1 class="h2 mb-0 me-2">${escapeHtml(doc.title)}</h1>
+          <span class="badge bg-primary">${escapeHtml(doc.category)}</span>
+        </div>
+        <div class="mb-3">${tags}</div>
+        ${renderMarkdown(doc.body)}
+      `;
+    }
+
+    function filterDocs(q) {
+      if (!q) return state.docs;
+      const results = state.fuse.search(q);
+      return results.map(r => r.item);
+    }
+
+    function selectDoc(slug) {
+      const doc = state.docs.find(d => d.slug === slug) || state.docs[0];
+      state.current = doc; renderDoc(doc);
+      history.replaceState(null, '', `${location.pathname}${location.search}#${doc.slug}`);
+    }
+
+    const onSearch = debounce((e) => {
+      const q = e.target.value.trim();
+      const items = filterDocs(q);
+      renderList(items);
+      const params = new URLSearchParams(location.search);
+      if (q) params.set('q', q); else params.delete('q');
+      history.replaceState(null, '', `${location.pathname}?${params.toString()}${location.hash}`);
+    }, 150);
+
+    async function initDocs() {
+      const res = await fetch('data/docs.json');
+      state.docs = await res.json();
+      state.fuse = new Fuse(state.docs, { keys: ['title','tags','summary','body'], includeScore: true, threshold: 0.35 });
+
+      const params = new URLSearchParams(location.search);
+      const q = params.get('q') || '';
+      const initial = q ? filterDocs(q) : state.docs;
+      renderList(initial);
+      const search = document.getElementById('search');
+      search.value = q; search.addEventListener('input', onSearch);
+
+      const slug = location.hash ? location.hash.slice(1) : (initial[0] && initial[0].slug);
+      selectDoc(slug);
+    }
+
+    (async function() {
+      try {
+        await loadScript('js/vendor/fuse.min.js');
+      } catch (e) {
+        try { await loadScript('https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js'); } catch (_) {}
+      }
+      if (window.Fuse) { initDocs(); } else {
+        document.getElementById('content').innerHTML = '<p class="text-danger">Search library failed to load.</p>';
+      }
+    })();
+  </script>
+  
+</body>
+
+</html>
+

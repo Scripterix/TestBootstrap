@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing - TestBootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TestBootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-5 bg-dark text-light hero-custom-bg">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-3 fw-bold mb-3">Pricing</h1>
+          <p class="lead mb-4">Simple tiers that scale with you</p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+            <a href="services.html" class="btn btn-primary btn-lg px-4">Get Started</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Work with us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="divider">
+
+  <!-- Plans -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <!-- Starter -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Starter</h5>
+              <h2 class="fw-bold">$0</h2>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li>✔ 1 project</li>
+                <li>✔ Community support</li>
+                <li>✔ Basic analytics</li>
+                <li>✔ Starter templates</li>
+                <li>✔ Email reports</li>
+                <li>✔ Free forever</li>
+              </ul>
+              <a class="btn btn-outline-primary mt-auto" href="#">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro (Recommended) -->
+        <div class="col">
+          <div class="card h-100 border-primary shadow">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Pro</h5>
+                <span class="badge bg-primary">Recommended</span>
+              </div>
+              <h2 class="fw-bold">$19</h2>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li>✔ 5 projects</li>
+                <li>✔ Priority support</li>
+                <li>✔ Advanced analytics</li>
+                <li>✔ CI/CD minutes</li>
+                <li>✔ Custom domains</li>
+                <li>✔ Team collaboration</li>
+              </ul>
+              <a class="btn btn-primary mt-auto" href="#">Upgrade</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Business</h5>
+              <h2 class="fw-bold">$49</h2>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li>✔ Unlimited projects</li>
+                <li>✔ SLA support</li>
+                <li>✔ SSO & audit logs</li>
+                <li>✔ Increased CI/CD minutes</li>
+                <li>✔ Role-based access</li>
+                <li>✔ Onboarding assistance</li>
+              </ul>
+              <a class="btn btn-outline-primary mt-auto" href="#">Start Business</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Enterprise</h5>
+              <h2 class="fw-bold">Contact</h2>
+              <ul class="list-unstyled mt-3 mb-4 small">
+                <li>✔ Custom SLAs</li>
+                <li>✔ Dedicated support</li>
+                <li>✔ Private cloud/VPC</li>
+                <li>✔ Security reviews</li>
+                <li>✔ Training & enablement</li>
+                <li>✔ Executive reporting</li>
+              </ul>
+              <a class="btn btn-outline-secondary mt-auto" href="mailto:contact@example.com">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="divider">
+
+  <!-- Comparison table -->
+  <section class="pb-5">
+    <div class="container">
+      <h2 class="h4 mb-3">Compare plans</h2>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Pro</th>
+              <th scope="col">Business</th>
+              <th scope="col">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pages</th>
+              <td>Up to 5</td>
+              <td>Up to 20</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Users</th>
+              <td>1</td>
+              <td>5</td>
+              <td>25</td>
+              <td>Custom</td>
+            </tr>
+            <tr>
+              <th scope="row">Support</th>
+              <td>Community</td>
+              <td>Priority</td>
+              <td>SLA</td>
+              <td>Dedicated</td>
+            </tr>
+            <tr>
+              <th scope="row">Build minutes</th>
+              <td>50 / month</td>
+              <td>500 / month</td>
+              <td>5,000 / month</td>
+              <td>Custom</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <hr class="divider">
+
+  <!-- FAQs -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h4 mb-4">Pricing FAQs</h2>
+      <div class="accordion" id="pricingFaq">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="pf1h">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pf1" aria-expanded="true" aria-controls="pf1">
+              Can I switch plans later?
+            </button>
+          </h2>
+          <div id="pf1" class="accordion-collapse collapse show" aria-labelledby="pf1h" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">Yes. Upgrades apply immediately and prorate fairly; downgrades take effect next cycle.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="pf2h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf2" aria-expanded="false" aria-controls="pf2">
+              Do you offer discounts for nonprofits or students?
+            </button>
+          </h2>
+          <div id="pf2" class="accordion-collapse collapse" aria-labelledby="pf2h" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">We do. Contact us to verify eligibility and we’ll share options.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="pf3h">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf3" aria-expanded="false" aria-controls="pf3">
+              What’s included in Enterprise?
+            </button>
+          </h2>
+          <div id="pf3" class="accordion-collapse collapse" aria-labelledby="pf3h" data-bs-parent="#pricingFaq">
+            <div class="accordion-body">Tailored security, deployment options, and support designed for your org’s needs.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global CTA -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="h3 fw-semibold mb-3">Ready to start working together?</h2>
+      <p class="lead mb-4">Let's scope your project and build something great.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+        <a class="btn btn-primary btn-lg" href="services.html">View Services</a>
+        <a class="btn btn-outline-secondary btn-lg" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer bg-dark text-light">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-12 col-lg-3">
+          <h5 class="mb-2">TestBootstrap</h5>
+          <p class="text-secondary mb-0">Built with Bootstrap and local assets</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="text-light" href="about.html">About</a></li>
+            <li class="mb-2"><a class="text-light" href="services.html">Services</a></li>
+            <li class="mb-2"><a class="text-light" href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a class="text-light" href="docs.html">Docs</a></li>
+            <li class="mb-2"><a class="text-light" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Guides</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Getting started</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Starter template</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Components</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Layout</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Projects</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Bootstrap 5</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Example repo</a></li>
+            <li class="mb-2"><a class="text-light" href="#">GitHub</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Open Source</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-uppercase small mb-3">Community</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="text-light" href="#">Discussions</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Sponsors</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Blog</a></li>
+            <li class="mb-2"><a class="text-light" href="#">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-top">
+      <div class="container py-5">
+        <div class="small text-center text-secondary">© 2025 TestBootstrap. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
+
